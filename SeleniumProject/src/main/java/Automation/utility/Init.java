@@ -10,7 +10,7 @@ import static org.apache.logging.log4j.LogManager.getLogger;
 
 public class Init extends DriverFactory{
 	
-	private static final String URL = "https://gbh.com.do/";
+	private static final String URL = "https://www.google.com/";
 
     protected WebDriver driver = null;
     private static final long IMPLICIT_TIME = 5;

@@ -6,6 +6,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 public class Services {
 	
     protected WebDriver driver;
@@ -15,11 +17,16 @@ public class Services {
     }
 
     public void waitForElement(String locator) {
-        new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
+        Duration timeout = Duration.ofSeconds(10);
+        new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
     }
 
     protected void click(String locator) {
         driver.findElement(By.xpath(locator)).click();
+    }
+
+    protected void type(String locator, String text) {
+        driver.findElement(By.xpath(locator)).sendKeys(text);
     }
     protected void hoverOver(String locator) {
     	Actions action = new Actions(driver);

@@ -10,6 +10,7 @@ public class DriverFactory {
 
     public WebDriver getDriver() {
         String browser = System.getProperty("browser");
+        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//resources//chromedriver");
         if (browser == null)
             browser = "chrome";
 
