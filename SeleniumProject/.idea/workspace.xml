@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c791953-9ebf-400c-8846-6379c2386c68" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Automation/utility/OpenWeatherMapAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Automation/testcases/WeatherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automation/testcases/WeatherTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Automation/testcases/WeatherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automation/testcases/WeatherTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="1c791953-9ebf-400c-8846-6379c2386c68" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +41,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/alfredpolanco/Documents/PersonalProjects/SeleniumGBH/SeleniumProject",
+    "last_opened_file_path": "/Users/alfredpolanco/Documents/PersonalProjects/SeleniumTest/SeleniumProject",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
