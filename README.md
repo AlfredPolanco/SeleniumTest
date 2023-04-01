@@ -40,3 +40,6 @@ git clone https://github.com/AlfredPolanco/SeleniumTest.git
 Go to `src/main/java/Automation/testcases` and run `WeatherTest`
 
 Once it is done, it will output the Google Weather Temp and OpenWeatherMapAPI temperatures and its difference between the two results.
+
+<img width="442" alt="Screen Shot 2023-04-01 at 11 18 59 AM" src="https://user-images.githubusercontent.com/39679348/229297954-66e97dba-3f60-46d6-b748-d13d48746132.png">
+
