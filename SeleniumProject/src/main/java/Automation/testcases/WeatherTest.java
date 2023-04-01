@@ -4,6 +4,7 @@ import Automation.pages.GoogleHomePage;
 import Automation.pages.ResultsPage;
 import Automation.utility.Init;
 import Automation.utility.OpenWeatherMapAPI;
+import Automation.utility.TempObj;
 
 import static org.testng.Assert.assertEquals;
 
@@ -20,12 +21,14 @@ public class WeatherTest extends Init{
         //Get location Temperature
         ResultsPage resultsPage = new ResultsPage(driver);
         resultsPage.checkForWeatherInfo();
-        System.out.println(resultsPage.getTemperature());
+        System.out.println("Google Weather: " + resultsPage.getTemperature());
 
         //Calls the OpenWeatherMapAPI
         OpenWeatherMapAPI openWeatherMapAPI = new OpenWeatherMapAPI();
-        openWeatherMapAPI.getAPIData();
+        System.out.println("OpenWeatherMapAPI: " + openWeatherMapAPI.getAPIData());
 
-
+        //Adding values to the Temp Obj
+        TempObj tempObj = new TempObj(resultsPage.getTemperature(), openWeatherMapAPI.getAPIData());
+        System.out.println(tempObj.tempDiff());
     }
 }

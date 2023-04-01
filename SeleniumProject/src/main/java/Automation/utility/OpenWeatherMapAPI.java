@@ -2,19 +2,17 @@ package Automation.utility;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import io.restassured.http.ContentType;
 
+import static org.testng.Assert.assertEquals;
 public class OpenWeatherMapAPI {
-    private String baseUrl;
-    public void getAPIData() {
-        this.baseUrl = "https://api.openweathermap.org/data/2.5/weather?q=london&appid=f7efb2b731257908d61456bcef464f6c&units=metric";
-        RestAssured.baseURI = baseUrl;
-        Response response = RestAssured.given()
-                .contentType(ContentType.JSON)
-                .when()
-                .get("/")
-                .then().extract().response();
+    public int getAPIData() {
+//      37.76249601685431, -122.42112731919765 San Francisco, California Lat & Lo
+        Response response = RestAssured.get("https://api.openweathermap.org/data/3.0/onecall?lat=37.76249601685431&lon=-122.42112731919765&units=metric&appid=acbe7cfd45a237ffb04ba32846ad2ce8");
+        int statusCode = response.getStatusCode();
+        assertEquals(statusCode, 200);
 
-        System.out.println(response.asPrettyString());
+        String rawTemperature = response.jsonPath().getString("current.temp");
+        int temp = (int) Math.round(Double.parseDouble(rawTemperature));
+        return temp;
     }
 }

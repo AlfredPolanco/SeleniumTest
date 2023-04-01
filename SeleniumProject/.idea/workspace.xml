@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c791953-9ebf-400c-8846-6379c2386c68" name="Changes" comment="" />
+    <list default="true" id="1c791953-9ebf-400c-8846-6379c2386c68" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Automation/utility/TempObj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Automation/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automation/pages/ResultsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Automation/testcases/WeatherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automation/testcases/WeatherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Automation/utility/OpenWeatherMapAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Automation/utility/OpenWeatherMapAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Automation/pages/ResultsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automation/pages/ResultsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Automation/testcases/WeatherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automation/testcases/WeatherTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Automation/utility/OpenWeatherMapAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Automation/utility/OpenWeatherMapAPI.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

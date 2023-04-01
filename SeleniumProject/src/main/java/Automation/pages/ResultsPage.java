@@ -15,7 +15,9 @@ public class ResultsPage extends Services{
     	waitForElement(weatherIcon);
         waitForElement(locationTemperature);
     }
-    public String getTemperature() {
-    	return getText(locationTemperature);
+    public int getTemperature() {
+        String googleTemp = getText(locationTemperature);
+        int temp = Integer.parseInt(googleTemp);
+        return temp;
     }
 }
