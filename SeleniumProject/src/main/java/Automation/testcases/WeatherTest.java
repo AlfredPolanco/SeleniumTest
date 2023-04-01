@@ -3,6 +3,7 @@ package Automation.testcases;
 import Automation.pages.GoogleHomePage;
 import Automation.pages.ResultsPage;
 import Automation.utility.Init;
+import Automation.utility.OpenWeatherMapAPI;
 
 import static org.testng.Assert.assertEquals;
 
@@ -20,6 +21,11 @@ public class WeatherTest extends Init{
         ResultsPage resultsPage = new ResultsPage(driver);
         resultsPage.checkForWeatherInfo();
         System.out.println(resultsPage.getTemperature());
+
+        //Calls the OpenWeatherMapAPI
+        OpenWeatherMapAPI openWeatherMapAPI = new OpenWeatherMapAPI();
+        openWeatherMapAPI.getAPIData();
+
 
     }
 }
