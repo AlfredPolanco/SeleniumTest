@@ -6,8 +6,12 @@ import io.restassured.response.Response;
 import static org.testng.Assert.assertEquals;
 public class OpenWeatherMapAPI {
     public int getAPIData() {
-//      37.76249601685431, -122.42112731919765 San Francisco, California Lat & Lo
-        Response response = RestAssured.get("https://api.openweathermap.org/data/3.0/onecall?lat=37.76249601685431&lon=-122.42112731919765&units=metric&appid=acbe7cfd45a237ffb04ba32846ad2ce8");
+//      37.76249601685431, -122.42112731919765 San Francisco, California latitude & longitude
+        String apiKey = "Add_API_KEY";
+        String baseURL = "https://api.openweathermap.org/data/3.0/onecall?";
+        String latitude = "37.76249601685431";
+        String longitude = "-122.42112731919765";
+        Response response = RestAssured.get(baseURL+"lat="+latitude+"&lon="+longitude+"&units=metric&appid="+apiKey);
         int statusCode = response.getStatusCode();
         assertEquals(statusCode, 200);
 
